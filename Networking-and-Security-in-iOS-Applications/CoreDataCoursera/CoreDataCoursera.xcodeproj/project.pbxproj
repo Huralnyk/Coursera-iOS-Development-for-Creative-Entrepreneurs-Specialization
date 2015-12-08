@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C5016AED1C16C8AB00C4E4A3 /* PickerViewHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = C5016AEC1C16C8AB00C4E4A3 /* PickerViewHelper.m */; };
+		C5EBA7331C159A7D00033331 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA7321C159A7D00033331 /* main.m */; };
+		C5EBA7361C159A7D00033331 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA7351C159A7D00033331 /* AppDelegate.m */; };
+		C5EBA7391C159A7D00033331 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA7381C159A7D00033331 /* ViewController.m */; };
+		C5EBA73C1C159A7D00033331 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EBA73A1C159A7D00033331 /* Main.storyboard */; };
+		C5EBA73F1C159A7D00033331 /* CoreDataCoursera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA73D1C159A7D00033331 /* CoreDataCoursera.xcdatamodeld */; };
+		C5EBA7411C159A7D00033331 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5EBA7401C159A7D00033331 /* Assets.xcassets */; };
+		C5EBA7441C159A7D00033331 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5EBA7421C159A7D00033331 /* LaunchScreen.storyboard */; };
+		C5EBA7641C15A4B900033331 /* ChoreMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA7591C15A4B900033331 /* ChoreMO+CoreDataProperties.m */; };
+		C5EBA7651C15A4B900033331 /* ChoreMO.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA75B1C15A4B900033331 /* ChoreMO.m */; };
+		C5EBA7661C15A4B900033331 /* PersonMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA75D1C15A4B900033331 /* PersonMO+CoreDataProperties.m */; };
+		C5EBA7671C15A4B900033331 /* PersonMO.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA75F1C15A4B900033331 /* PersonMO.m */; };
+		C5EBA7681C15A4B900033331 /* ChoreLogMO+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA7611C15A4B900033331 /* ChoreLogMO+CoreDataProperties.m */; };
+		C5EBA7691C15A4B900033331 /* ChoreLogMO.m in Sources */ = {isa = PBXBuildFile; fileRef = C5EBA7631C15A4B900033331 /* ChoreLogMO.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C5016AEB1C16C8AA00C4E4A3 /* PickerViewHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewHelper.h; sourceTree = "<group>"; };
+		C5016AEC1C16C8AB00C4E4A3 /* PickerViewHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewHelper.m; sourceTree = "<group>"; };
+		C5EBA72E1C159A7D00033331 /* CoreDataCoursera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataCoursera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5EBA7321C159A7D00033331 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5EBA7341C159A7D00033331 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C5EBA7351C159A7D00033331 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C5EBA7371C159A7D00033331 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C5EBA7381C159A7D00033331 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C5EBA73B1C159A7D00033331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5EBA73E1C159A7D00033331 /* CoreDataCoursera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataCoursera.xcdatamodel; sourceTree = "<group>"; };
+		C5EBA7401C159A7D00033331 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5EBA7431C159A7D00033331 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5EBA7451C159A7D00033331 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5EBA7581C15A4B900033331 /* ChoreMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ChoreMO+CoreDataProperties.h"; path = "CoreDataCoursera/ChoreMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C5EBA7591C15A4B900033331 /* ChoreMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ChoreMO+CoreDataProperties.m"; path = "CoreDataCoursera/ChoreMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C5EBA75A1C15A4B900033331 /* ChoreMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChoreMO.h; path = CoreDataCoursera/ChoreMO.h; sourceTree = "<group>"; };
+		C5EBA75B1C15A4B900033331 /* ChoreMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChoreMO.m; path = CoreDataCoursera/ChoreMO.m; sourceTree = "<group>"; };
+		C5EBA75C1C15A4B900033331 /* PersonMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PersonMO+CoreDataProperties.h"; path = "CoreDataCoursera/PersonMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C5EBA75D1C15A4B900033331 /* PersonMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PersonMO+CoreDataProperties.m"; path = "CoreDataCoursera/PersonMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C5EBA75E1C15A4B900033331 /* PersonMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonMO.h; path = CoreDataCoursera/PersonMO.h; sourceTree = "<group>"; };
+		C5EBA75F1C15A4B900033331 /* PersonMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonMO.m; path = CoreDataCoursera/PersonMO.m; sourceTree = "<group>"; };
+		C5EBA7601C15A4B900033331 /* ChoreLogMO+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ChoreLogMO+CoreDataProperties.h"; path = "CoreDataCoursera/ChoreLogMO+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C5EBA7611C15A4B900033331 /* ChoreLogMO+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "ChoreLogMO+CoreDataProperties.m"; path = "CoreDataCoursera/ChoreLogMO+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C5EBA7621C15A4B900033331 /* ChoreLogMO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChoreLogMO.h; path = CoreDataCoursera/ChoreLogMO.h; sourceTree = "<group>"; };
+		C5EBA7631C15A4B900033331 /* ChoreLogMO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChoreLogMO.m; path = CoreDataCoursera/ChoreLogMO.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5EBA72B1C159A7D00033331 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C5EBA7251C159A7D00033331 = {
+			isa = PBXGroup;
+			children = (
+				C5EBA76A1C15A4CB00033331 /* CoreDataModel */,
+				C5EBA7301C159A7D00033331 /* CoreDataCoursera */,
+				C5EBA72F1C159A7D00033331 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C5EBA72F1C159A7D00033331 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5EBA72E1C159A7D00033331 /* CoreDataCoursera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5EBA7301C159A7D00033331 /* CoreDataCoursera */ = {
+			isa = PBXGroup;
+			children = (
+				C5EBA7341C159A7D00033331 /* AppDelegate.h */,
+				C5EBA7351C159A7D00033331 /* AppDelegate.m */,
+				C5EBA7371C159A7D00033331 /* ViewController.h */,
+				C5EBA7381C159A7D00033331 /* ViewController.m */,
+				C5EBA73A1C159A7D00033331 /* Main.storyboard */,
+				C5EBA7401C159A7D00033331 /* Assets.xcassets */,
+				C5EBA7421C159A7D00033331 /* LaunchScreen.storyboard */,
+				C5EBA7451C159A7D00033331 /* Info.plist */,
+				C5EBA73D1C159A7D00033331 /* CoreDataCoursera.xcdatamodeld */,
+				C5EBA7311C159A7D00033331 /* Supporting Files */,
+				C5016AEB1C16C8AA00C4E4A3 /* PickerViewHelper.h */,
+				C5016AEC1C16C8AB00C4E4A3 /* PickerViewHelper.m */,
+			);
+			path = CoreDataCoursera;
+			sourceTree = "<group>";
+		};
+		C5EBA7311C159A7D00033331 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C5EBA7321C159A7D00033331 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C5EBA76A1C15A4CB00033331 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				C5EBA7581C15A4B900033331 /* ChoreMO+CoreDataProperties.h */,
+				C5EBA7591C15A4B900033331 /* ChoreMO+CoreDataProperties.m */,
+				C5EBA75A1C15A4B900033331 /* ChoreMO.h */,
+				C5EBA75B1C15A4B900033331 /* ChoreMO.m */,
+				C5EBA75C1C15A4B900033331 /* PersonMO+CoreDataProperties.h */,
+				C5EBA75D1C15A4B900033331 /* PersonMO+CoreDataProperties.m */,
+				C5EBA75E1C15A4B900033331 /* PersonMO.h */,
+				C5EBA75F1C15A4B900033331 /* PersonMO.m */,
+				C5EBA7601C15A4B900033331 /* ChoreLogMO+CoreDataProperties.h */,
+				C5EBA7611C15A4B900033331 /* ChoreLogMO+CoreDataProperties.m */,
+				C5EBA7621C15A4B900033331 /* ChoreLogMO.h */,
+				C5EBA7631C15A4B900033331 /* ChoreLogMO.m */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5EBA72D1C159A7D00033331 /* CoreDataCoursera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5EBA7481C159A7D00033331 /* Build configuration list for PBXNativeTarget "CoreDataCoursera" */;
+			buildPhases = (
+				C5EBA72A1C159A7D00033331 /* Sources */,
+				C5EBA72B1C159A7D00033331 /* Frameworks */,
+				C5EBA72C1C159A7D00033331 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreDataCoursera;
+			productName = CoreDataCoursera;
+			productReference = C5EBA72E1C159A7D00033331 /* CoreDataCoursera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5EBA7261C159A7D00033331 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Alexey Huralnyk";
+				TargetAttributes = {
+					C5EBA72D1C159A7D00033331 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = C5EBA7291C159A7D00033331 /* Build configuration list for PBXProject "CoreDataCoursera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5EBA7251C159A7D00033331;
+			productRefGroup = C5EBA72F1C159A7D00033331 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5EBA72D1C159A7D00033331 /* CoreDataCoursera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5EBA72C1C159A7D00033331 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EBA7441C159A7D00033331 /* LaunchScreen.storyboard in Resources */,
+				C5EBA7411C159A7D00033331 /* Assets.xcassets in Resources */,
+				C5EBA73C1C159A7D00033331 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5EBA72A1C159A7D00033331 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5EBA7671C15A4B900033331 /* PersonMO.m in Sources */,
+				C5EBA7661C15A4B900033331 /* PersonMO+CoreDataProperties.m in Sources */,
+				C5EBA73F1C159A7D00033331 /* CoreDataCoursera.xcdatamodeld in Sources */,
+				C5EBA7651C15A4B900033331 /* ChoreMO.m in Sources */,
+				C5EBA7391C159A7D00033331 /* ViewController.m in Sources */,
+				C5EBA7361C159A7D00033331 /* AppDelegate.m in Sources */,
+				C5016AED1C16C8AB00C4E4A3 /* PickerViewHelper.m in Sources */,
+				C5EBA7331C159A7D00033331 /* main.m in Sources */,
+				C5EBA7641C15A4B900033331 /* ChoreMO+CoreDataProperties.m in Sources */,
+				C5EBA7691C15A4B900033331 /* ChoreLogMO.m in Sources */,
+				C5EBA7681C15A4B900033331 /* ChoreLogMO+CoreDataProperties.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C5EBA73A1C159A7D00033331 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5EBA73B1C159A7D00033331 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5EBA7421C159A7D00033331 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5EBA7431C159A7D00033331 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5EBA7461C159A7D00033331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C5EBA7471C159A7D00033331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5EBA7491C159A7D00033331 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CoreDataCoursera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huralnyk.coursera.CoreDataCoursera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreDataCoursera-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5EBA74A1C159A7D00033331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CoreDataCoursera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.huralnyk.coursera.CoreDataCoursera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreDataCoursera-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5EBA7291C159A7D00033331 /* Build configuration list for PBXProject "CoreDataCoursera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5EBA7461C159A7D00033331 /* Debug */,
+				C5EBA7471C159A7D00033331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5EBA7481C159A7D00033331 /* Build configuration list for PBXNativeTarget "CoreDataCoursera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5EBA7491C159A7D00033331 /* Debug */,
+				C5EBA74A1C159A7D00033331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5EBA73D1C159A7D00033331 /* CoreDataCoursera.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5EBA73E1C159A7D00033331 /* CoreDataCoursera.xcdatamodel */,
+			);
+			currentVersion = C5EBA73E1C159A7D00033331 /* CoreDataCoursera.xcdatamodel */;
+			path = CoreDataCoursera.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C5EBA7261C159A7D00033331 /* Project object */;
+}

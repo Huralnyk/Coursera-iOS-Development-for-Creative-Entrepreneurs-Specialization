@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjX-iH-3A8">
+                                <rect key="frame" x="16" y="66" width="132" height="30"/>
+                                <state key="normal" title="Add a Chore"/>
+                                <connections>
+                                    <action selector="choreTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tLP-mj-uiF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="50" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsN-Bh-PUP">
+                                <rect key="frame" x="0.0" y="418" width="320" height="120"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXu-yY-wGt">
+                                <rect key="frame" x="0.0" y="538" width="320" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deleteTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gqp-qS-e5l"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vJB-xW-VOs">
+                                <rect key="frame" x="16" y="96" width="132" height="120"/>
+                            </pickerView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nS1-Sq-0ev">
+                                <rect key="frame" x="172" y="28" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttr-dk-c3W">
+                                <rect key="frame" x="172" y="66" width="132" height="30"/>
+                                <state key="normal" title="Add a Person"/>
+                                <connections>
+                                    <action selector="personTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jm3-pb-DAf"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cD5-Qa-mOG">
+                                <rect key="frame" x="172" y="96" width="132" height="120"/>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" verticalCompressionResistancePriority="749" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="VZM-XJ-7Td">
+                                <rect key="frame" x="0.0" y="216" width="320" height="172"/>
+                                <date key="date" timeIntervalSinceReferenceDate="471259808.15443599">
+                                    <!--2015-12-08 09:30:08 +0000-->
+                                </date>
+                            </datePicker>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxU-dn-0kO">
+                                <rect key="frame" x="0.0" y="388" width="320" height="30"/>
+                                <state key="normal" title="Add Chore Log Entry"/>
+                                <connections>
+                                    <action selector="choreLogTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jKX-Xq-sh3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="no5-tK-v73">
+                                <rect key="frame" x="16" y="28" width="132" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="choreField" destination="no5-tK-v73" id="nF5-H5-bIg"/>
+                        <outlet property="choreRoller" destination="vJB-xW-VOs" id="cM4-ga-sA5"/>
+                        <outlet property="datePicker" destination="VZM-XJ-7Td" id="SWu-xJ-mOP"/>
+                        <outlet property="persistedData" destination="lsN-Bh-PUP" id="QbA-TN-MDT"/>
+                        <outlet property="personField" destination="nS1-Sq-0ev" id="tlv-fN-lY9"/>
+                        <outlet property="personRoller" destination="cD5-Qa-mOG" id="nIF-Ue-S2J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300" y="416"/>
+        </scene>
+    </scenes>
+</document>
