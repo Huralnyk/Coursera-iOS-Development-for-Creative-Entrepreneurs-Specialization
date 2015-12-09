@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F1505" minimumToolsVersion="Automatic">
+    <entity name="ComicBook" representedClassName="ComicBookMO" syncable="YES">
+        <attribute name="genre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publisher" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="authors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Person" inverseName="comic_books" inverseEntity="Person" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="PersonMO" syncable="YES">
+        <attribute name="firstname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="comic_books" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ComicBook" inverseName="authors" inverseEntity="ComicBook" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="ComicBook" positionX="-353" positionY="3" width="128" height="105"/>
+        <element name="Person" positionX="-54" positionY="18" width="128" height="88"/>
+    </elements>
+</model>
