@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FyC-S3-xCR">
+                                <rect key="frame" x="0.0" y="407" width="600" height="193"/>
+                                <connections>
+                                    <segue destination="OqN-6J-Uz2" kind="embed" id="EoL-QP-h7A"/>
+                                </connections>
+                            </containerView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5j-HZ-fy0">
+                                <rect key="frame" x="0.0" y="213" width="600" height="194"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="anD-U8-szG">
+                                <rect key="frame" x="0.0" y="20" width="600" height="193"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FyC-S3-xCR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Co-53-Lzq"/>
+                            <constraint firstItem="g5j-HZ-fy0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7ZL-96-wYK"/>
+                            <constraint firstItem="anD-U8-szG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8E6-3Z-3RO"/>
+                            <constraint firstAttribute="trailing" secondItem="FyC-S3-xCR" secondAttribute="trailing" id="By4-Cg-RDW"/>
+                            <constraint firstAttribute="trailing" secondItem="anD-U8-szG" secondAttribute="trailing" id="C8v-rD-7ue"/>
+                            <constraint firstItem="anD-U8-szG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DGS-u7-ugt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FyC-S3-xCR" secondAttribute="bottom" id="FVk-Lg-FxF"/>
+                            <constraint firstAttribute="trailing" secondItem="anD-U8-szG" secondAttribute="trailing" id="GJn-kE-4gx"/>
+                            <constraint firstAttribute="trailing" secondItem="FyC-S3-xCR" secondAttribute="trailing" id="GOc-35-t8F"/>
+                            <constraint firstItem="FyC-S3-xCR" firstAttribute="height" secondItem="anD-U8-szG" secondAttribute="height" id="P9W-Uz-LTL"/>
+                            <constraint firstItem="g5j-HZ-fy0" firstAttribute="top" secondItem="anD-U8-szG" secondAttribute="bottom" id="QZV-0E-sIk"/>
+                            <constraint firstItem="FyC-S3-xCR" firstAttribute="leading" secondItem="g5j-HZ-fy0" secondAttribute="trailing" constant="121" id="RJz-U2-XmK">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="anD-U8-szG" firstAttribute="leading" secondItem="g5j-HZ-fy0" secondAttribute="trailing" constant="27" id="Rlb-7h-jNV">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="FyC-S3-xCR" firstAttribute="height" secondItem="anD-U8-szG" secondAttribute="height" multiplier="2" id="WLt-Xn-moN"/>
+                            <constraint firstItem="FyC-S3-xCR" firstAttribute="top" secondItem="anD-U8-szG" secondAttribute="bottom" id="YmO-V5-gpN"/>
+                            <constraint firstItem="g5j-HZ-fy0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ZDe-an-ZPL"/>
+                            <constraint firstItem="g5j-HZ-fy0" firstAttribute="width" secondItem="anD-U8-szG" secondAttribute="width" id="a5L-rM-arQ"/>
+                            <constraint firstItem="g5j-HZ-fy0" firstAttribute="height" secondItem="anD-U8-szG" secondAttribute="height" id="aI7-vC-F7Y"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FyC-S3-xCR" secondAttribute="bottom" id="aqB-o2-SRl"/>
+                            <constraint firstAttribute="trailing" secondItem="g5j-HZ-fy0" secondAttribute="trailing" id="dMp-hj-v8Y"/>
+                            <constraint firstItem="FyC-S3-xCR" firstAttribute="top" secondItem="g5j-HZ-fy0" secondAttribute="bottom" id="dw7-C1-Sua"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="g5j-HZ-fy0" secondAttribute="bottom" id="f16-cu-cpw"/>
+                            <constraint firstItem="anD-U8-szG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lzo-nr-A88"/>
+                            <constraint firstItem="g5j-HZ-fy0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="noa-48-SIW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8E6-3Z-3RO"/>
+                                <exclude reference="C8v-rD-7ue"/>
+                                <exclude reference="Rlb-7h-jNV"/>
+                                <exclude reference="ZDe-an-ZPL"/>
+                                <exclude reference="a5L-rM-arQ"/>
+                                <exclude reference="noa-48-SIW"/>
+                                <exclude reference="By4-Cg-RDW"/>
+                                <exclude reference="RJz-U2-XmK"/>
+                                <exclude reference="WLt-Xn-moN"/>
+                                <exclude reference="YmO-V5-gpN"/>
+                                <exclude reference="FVk-Lg-FxF"/>
+                                <exclude reference="f16-cu-cpw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="8E6-3Z-3RO"/>
+                                <include reference="C8v-rD-7ue"/>
+                                <exclude reference="DGS-u7-ugt"/>
+                                <exclude reference="GJn-kE-4gx"/>
+                                <include reference="Rlb-7h-jNV"/>
+                                <exclude reference="lzo-nr-A88"/>
+                                <exclude reference="7ZL-96-wYK"/>
+                                <exclude reference="QZV-0E-sIk"/>
+                                <include reference="ZDe-an-ZPL"/>
+                                <include reference="a5L-rM-arQ"/>
+                                <exclude reference="aI7-vC-F7Y"/>
+                                <exclude reference="dMp-hj-v8Y"/>
+                                <include reference="noa-48-SIW"/>
+                                <exclude reference="0Co-53-Lzq"/>
+                                <include reference="By4-Cg-RDW"/>
+                                <exclude reference="GOc-35-t8F"/>
+                                <exclude reference="P9W-Uz-LTL"/>
+                                <include reference="RJz-U2-XmK"/>
+                                <include reference="WLt-Xn-moN"/>
+                                <include reference="YmO-V5-gpN"/>
+                                <exclude reference="dw7-C1-Sua"/>
+                                <include reference="FVk-Lg-FxF"/>
+                                <exclude reference="aqB-o2-SRl"/>
+                                <include reference="f16-cu-cpw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="anD-U8-szG" id="t5H-Rs-pvC"/>
+                        <outlet property="webView" destination="g5j-HZ-fy0" id="go9-rW-RP3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="355" y="171"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rMJ-7h-l3m">
+            <objects>
+                <viewController id="OqN-6J-Uz2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QBv-5c-tWx"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ccn-Jl-jd8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iF8-iM-CuV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="193"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="CBGB was a New York City music club opened in 1973 by Hilly Kristal in Manhattan's East Village." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2OL-kK-ocG">
+                                <rect key="frame" x="20" y="0.0" width="280" height="193"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="+1 646-455-0400" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sds-B0-5o7">
+                                <rect key="frame" x="300" y="0.0" width="280" height="193"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2OL-kK-ocG" firstAttribute="top" secondItem="iF8-iM-CuV" secondAttribute="topMargin" id="3ej-zW-Slw"/>
+                            <constraint firstItem="sds-B0-5o7" firstAttribute="height" secondItem="2OL-kK-ocG" secondAttribute="height" id="43p-Nk-enk"/>
+                            <constraint firstItem="2OL-kK-ocG" firstAttribute="leading" secondItem="iF8-iM-CuV" secondAttribute="leadingMargin" id="73P-Nt-byu"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="sds-B0-5o7" secondAttribute="bottom" id="BQt-GH-HHz"/>
+                            <constraint firstItem="sds-B0-5o7" firstAttribute="top" secondItem="iF8-iM-CuV" secondAttribute="topMargin" id="CCp-ni-nLt"/>
+                            <constraint firstItem="2OL-kK-ocG" firstAttribute="trailing" secondItem="iF8-iM-CuV" secondAttribute="trailingMargin" id="HeR-DA-wiH"/>
+                            <constraint firstItem="sds-B0-5o7" firstAttribute="width" secondItem="2OL-kK-ocG" secondAttribute="width" id="IOA-q5-7y7"/>
+                            <constraint firstItem="sds-B0-5o7" firstAttribute="leading" secondItem="2OL-kK-ocG" secondAttribute="trailing" id="Iec-pc-qEQ"/>
+                            <constraint firstItem="sds-B0-5o7" firstAttribute="top" secondItem="2OL-kK-ocG" secondAttribute="bottom" constant="85" id="WDC-U1-QDR">
+                                <variation key="heightClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="sds-B0-5o7" secondAttribute="trailing" id="YLP-x9-6Jj"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="2OL-kK-ocG" secondAttribute="bottom" id="eyv-PL-aIt"/>
+                            <constraint firstItem="sds-B0-5o7" firstAttribute="leading" secondItem="iF8-iM-CuV" secondAttribute="leadingMargin" id="g7V-i1-Hgk"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HeR-DA-wiH"/>
+                                <exclude reference="43p-Nk-enk"/>
+                                <exclude reference="WDC-U1-QDR"/>
+                                <exclude reference="g7V-i1-Hgk"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="HeR-DA-wiH"/>
+                                <exclude reference="eyv-PL-aIt"/>
+                                <include reference="43p-Nk-enk"/>
+                                <exclude reference="CCp-ni-nLt"/>
+                                <exclude reference="IOA-q5-7y7"/>
+                                <exclude reference="Iec-pc-qEQ"/>
+                                <include reference="WDC-U1-QDR"/>
+                                <include reference="g7V-i1-Hgk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pBe-Xs-lig" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="355" y="765.75"/>
+        </scene>
+    </scenes>
+</document>
