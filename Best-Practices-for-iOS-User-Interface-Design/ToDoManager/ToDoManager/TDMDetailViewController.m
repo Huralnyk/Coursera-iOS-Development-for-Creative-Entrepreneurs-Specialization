@@ -8,14 +8,15 @@
 
 #import "TDMDetailViewController.h"
 
-@interface TDMDetailViewController ()
+@interface TDMDetailViewController () <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @property (nonatomic) NSManagedObjectContext *moc;
 @property (nonatomic) ToDoEntity *item;
 
 @property (weak, nonatomic) IBOutlet UITextField *titleField;
-@property (weak, nonatomic) IBOutlet UITextView *detailsField;
-@property (weak, nonatomic) IBOutlet UIDatePicker *dateField;
+@property (weak, nonatomic) IBOutlet UIPickerView *priorityPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *statusPicker;
+
 
 @property (nonatomic) BOOL hasDeleted;
 
@@ -30,12 +31,8 @@
     [super viewWillAppear:animated];
     
     self.titleField.text = self.item.title;
-    self.detailsField.text = self.item.details;
-    if (self.item.dueDate) {
-        self.dateField.date = self.item.dueDate;
-    }
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(detailsFieldDidEndEditing:) name:UITextFieldTextDidEndEditingNotification object:self];
+    [self.priorityPicker selectRow:self.item.priority inComponent:0 animated:NO];
+    [self.statusPicker selectRow:self.item.done inComponent:0 animated:NO];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -43,12 +40,8 @@
     
     if (!self.hasDeleted) {
         self.item.title = self.titleField.text;
-        self.item.details = self.detailsField.text;
-        self.item.dueDate = self.dateField.date;
         [self save];
     }
-    
-    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)save {
@@ -64,23 +57,8 @@
 #
 
 - (IBAction)titleFieldDidEndEditing:(UITextField *)sender {
-    NSLog(@"*** %@", NSStringFromSelector(_cmd));
     self.item.title = sender.text;
     [self save];
-}
-
-- (IBAction)dateFieldDidEndEditing:(UIDatePicker *)sender {
-    NSLog(@"*** %@", NSStringFromSelector(_cmd));
-    self.item.dueDate = sender.date;
-    [self save];
-}
-
-- (void)detailsFieldDidEndEditing:(NSNotification *)notification {
-    NSLog(@"*** %@", NSStringFromSelector(_cmd));
-    if (notification.object == self) {
-        self.item.details = self.detailsField.text;
-        [self save];
-    }
 }
 
 - (IBAction)deleteTapped:(UIBarButtonItem *)sender {
@@ -102,6 +80,67 @@
 
 - (void)setToDoItem:(ToDoEntity *)item {
     self.item = item;
+}
+
+#pragma mark - Picker View Delegate
+#
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    if (pickerView == self.priorityPicker) {
+        return 3;
+    } else {
+        return 2;
+    }
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    
+    if (pickerView == self.priorityPicker) {
+        
+        if (row == 0) {
+            return @"Low";
+        } else if (row == 1) {
+            return @"Medium";
+        } else {
+            return @"High";
+        }
+        
+    } else {
+        
+        if (row == 0) {
+            return @"Not Finished";
+        } else {
+            return @"Finished";
+        }
+        
+    }
+}
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component {
+    
+    if (pickerView == self.priorityPicker) {
+        
+        if (row == 0) {
+            self.item.priority = ToDoEntityPriorityLow;
+        } else if (row == 1) {
+            self.item.priority = ToDoEntityPriorityMedium;
+        } else {
+            self.item.priority = ToDoEntityPriorityHigh;
+        }
+        
+    } else {
+        
+        if (row == 0) {
+            self.item.done = NO;
+        } else {
+            self.item.done = YES;
+        }
+        
+    }
 }
 
 @end

@@ -35,7 +35,11 @@
     if (!_resultsController) {
         NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"ToDoEntity"];
         request.predicate = [NSPredicate predicateWithFormat:@"TRUEPREDICATE"];
-        request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]];
+        request.sortDescriptors = @[
+            [NSSortDescriptor sortDescriptorWithKey:@"done" ascending:YES],
+            [NSSortDescriptor sortDescriptorWithKey:@"priority" ascending:NO],
+            [NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]
+        ];
         _resultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.moc sectionNameKeyPath:nil cacheName:nil];
         _resultsController.delegate = self;
         

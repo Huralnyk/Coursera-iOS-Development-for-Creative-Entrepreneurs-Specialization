@@ -16,9 +16,9 @@
 		A7B42DDF1C79FF6900D4F5B3 /* TDMNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B42DDE1C79FF6900D4F5B3 /* TDMNavigationViewController.m */; };
 		A7B42DE21C79FF7B00D4F5B3 /* TDMTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B42DE11C79FF7B00D4F5B3 /* TDMTableViewController.m */; };
 		A7B42DE51C79FF9700D4F5B3 /* TDMDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B42DE41C79FF9700D4F5B3 /* TDMDetailViewController.m */; };
-		A7B42DEE1C7A031800D4F5B3 /* ToDoEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B42DEB1C7A031800D4F5B3 /* ToDoEntity+CoreDataProperties.m */; };
 		A7B42DEF1C7A031800D4F5B3 /* ToDoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B42DED1C7A031800D4F5B3 /* ToDoEntity.m */; };
 		A7B42DF21C7A083900D4F5B3 /* TDMTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A7B42DF11C7A083900D4F5B3 /* TDMTableViewCell.m */; };
+		C5DF6FC31C7AF8A800AEA0D1 /* ToDoEntity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C5DF6FC21C7AF8A800AEA0D1 /* ToDoEntity+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,12 +39,12 @@
 		A7B42DE41C79FF9700D4F5B3 /* TDMDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDMDetailViewController.m; sourceTree = "<group>"; };
 		A7B42DE61C79FFBA00D4F5B3 /* TDMHandlerMOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDMHandlerMOC.h; sourceTree = "<group>"; };
 		A7B42DE71C79FFDB00D4F5B3 /* TDMHandlerToDoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDMHandlerToDoEntity.h; sourceTree = "<group>"; };
-		A7B42DEA1C7A031800D4F5B3 /* ToDoEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ToDoEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
-		A7B42DEB1C7A031800D4F5B3 /* ToDoEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ToDoEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
 		A7B42DEC1C7A031800D4F5B3 /* ToDoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoEntity.h; sourceTree = "<group>"; };
 		A7B42DED1C7A031800D4F5B3 /* ToDoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoEntity.m; sourceTree = "<group>"; };
 		A7B42DF01C7A083900D4F5B3 /* TDMTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TDMTableViewCell.h; sourceTree = "<group>"; };
 		A7B42DF11C7A083900D4F5B3 /* TDMTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TDMTableViewCell.m; sourceTree = "<group>"; };
+		C5DF6FC11C7AF8A800AEA0D1 /* ToDoEntity+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ToDoEntity+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C5DF6FC21C7AF8A800AEA0D1 /* ToDoEntity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ToDoEntity+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,8 +118,8 @@
 		A7B42DE91C7A023400D4F5B3 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				A7B42DEA1C7A031800D4F5B3 /* ToDoEntity+CoreDataProperties.h */,
-				A7B42DEB1C7A031800D4F5B3 /* ToDoEntity+CoreDataProperties.m */,
+				C5DF6FC11C7AF8A800AEA0D1 /* ToDoEntity+CoreDataProperties.h */,
+				C5DF6FC21C7AF8A800AEA0D1 /* ToDoEntity+CoreDataProperties.m */,
 				A7B42DEC1C7A031800D4F5B3 /* ToDoEntity.h */,
 				A7B42DED1C7A031800D4F5B3 /* ToDoEntity.m */,
 				A7B42DCF1C79FC4700D4F5B3 /* ToDoManager.xcdatamodeld */,
@@ -197,11 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5DF6FC31C7AF8A800AEA0D1 /* ToDoEntity+CoreDataProperties.m in Sources */,
 				A7B42DDF1C79FF6900D4F5B3 /* TDMNavigationViewController.m in Sources */,
 				A7B42DE51C79FF9700D4F5B3 /* TDMDetailViewController.m in Sources */,
 				A7B42DEF1C7A031800D4F5B3 /* ToDoEntity.m in Sources */,
 				A7B42DF21C7A083900D4F5B3 /* TDMTableViewCell.m in Sources */,
-				A7B42DEE1C7A031800D4F5B3 /* ToDoEntity+CoreDataProperties.m in Sources */,
 				A7B42DE21C79FF7B00D4F5B3 /* TDMTableViewController.m in Sources */,
 				A7B42DD11C79FC4700D4F5B3 /* ToDoManager.xcdatamodeld in Sources */,
 				A7B42DC81C79FC4700D4F5B3 /* AppDelegate.m in Sources */,
@@ -354,6 +354,7 @@
 				A7B42DDC1C79FC4700D4F5B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

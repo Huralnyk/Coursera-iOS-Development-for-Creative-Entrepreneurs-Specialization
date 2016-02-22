@@ -2,7 +2,7 @@
 //  ToDoEntity+CoreDataProperties.h
 //  ToDoManager
 //
-//  Created by Alexey Huralnyk on 2/21/16.
+//  Created by Alexey Huralnyk on 2/22/16.
 //  Copyright © 2016 Alexey Huralnyk. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -16,8 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface ToDoEntity (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *title;
+@property (nonatomic) NSTimeInterval dueDate;
 @property (nullable, nonatomic, retain) NSString *details;
-@property (nullable, nonatomic, retain) NSDate *dueDate;
+@property (nonatomic) ToDoEntityPriority priority;
+@property (nonatomic) BOOL done;
 
 @end
 

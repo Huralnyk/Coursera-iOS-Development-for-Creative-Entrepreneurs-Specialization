@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
+typedef NS_ENUM(int16_t, ToDoEntityPriority) {
+    ToDoEntityPriorityLow,
+    ToDoEntityPriorityMedium,
+    ToDoEntityPriorityHigh
+};
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ToDoEntity : NSManagedObject
